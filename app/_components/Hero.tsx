@@ -11,7 +11,7 @@ const Hero = () => {
     const [rentList, setRentList] = React.useState(rentals);
   return (
     <div className="w-full h-screen">
-      <div className="mx-20 my-10 mt-20">
+      <div className="mx-5 my-5 lg:mx-20 lg:my-10 mt-20">
         <h1 className="text-4xl font-bold text-gray-400 mb-10">
           FEATURED RENT
         </h1>
