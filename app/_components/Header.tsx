@@ -2,6 +2,8 @@ import { ModeToggle } from "@/components/ModeToggle";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { TextAlignJustify } from "lucide-react";
+import Link from "next/link";
+// import { UserButton, UserProfile } from "@clerk/nextjs";
 
 const Header = () => {
   return (
@@ -24,9 +26,12 @@ const Header = () => {
         </div>
         <div className="hidden  md:block">
           {/* end section  login*/}
+<Link href={"/sign-in"}>
           <span className="cursor-pointer hover:scale-110 hover:text-pink-600 hover:border-b-2 border-pink-600">
             Login
           </span>{" "}
+</Link>
+          {/* <UserButton /> */}
            <ModeToggle />
         </div>{" "}
         <div className="block md:hidden">
